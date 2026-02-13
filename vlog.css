@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    max-width: 60vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    /* background-color: beige; */
+}
+a{
+    text-decoration: none;
+}
+.headercontainer{
+    margin-bottom: 2.8rem;
+}
+.header_title{
+    margin-bottom:1rem ;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+.header_p{
+    max-width: 568px;
+    text-align: center;
+    margin: 0 auto ;
+    color: rgb(75, 67, 67);
+}
+.maincontainer{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1,1fr);
+
+}
+@media(min-width:935px){
+    .maincontainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(min-width:1300){
+    .maincontainer{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(min-width:1600px){
+    .maincontainer{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+.cardcontainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.cardimgcontainer{
+    position: relative;
+    overflow: hidden;
+    height: 11rem;
+}
+@media(min-width:768px){
+    .cardimgcontainer{
+      height: 14rem;
+}
+}
+.cardimage{
+    object-position: center;
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.cardtitlecontainer{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+}
+.cardcontainer:hover .cardimage{
+transform: scale(1.1);
+transition-duration: 200ms;
+}
+.cardtitle{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: black;
+}
+.cardtitleanchor:hover .cardtitle{
+    color: rgb(72, 72, 182);
+}
+.cardtitlecontainer p{
+   color: black;
+   font-size: 1rem;
+}
+.cardfooterconatiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: end ;
+    padding: 1rem;
+}
+.authorcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:1rem;
+}
+.authoravatrcontainer{
+    display: flex;
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(206, 196, 196);
+}
+.authorinfo{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.authorname{
+    color: rgb(75, 75, 133);
+    font-size: 0.9rem;
+}
+.authordate{
+    color: rgb(206, 175, 175);
+    font-size: 0.9rem;
+}
+.cardtagcontainer{
+    font-size: 0.9rem;
+    border: 1px solid black;
+    border-radius: 2px;
+
+}
+
