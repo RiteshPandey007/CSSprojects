@@ -235,3 +235,74 @@ body{
         font-size: 1rem;
 
     }
+    .card{
+        background-color: var(--light-gray);
+        margin-top: 2rem;
+        padding: 2rem 0;
+        text-align: center;
+    }
+    .cardcontent{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    .maininfo{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .maininfo h2{
+        font-size: 2.5rem;
+    }
+    .maininfo p{
+        color: var(--gray);
+        font-size: 1.09rem;
+    }
+    .cardgrid{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+    @media screen and (max-width:748px) {
+        .cardgrid{
+            grid-template-columns: repeat(1,1fr);
+        }
+        
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--link-color);
+        justify-content: center;
+        align-items: center;
+        background-color: #3f83f8;
+        margin-top: .5rem;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+      .icon{
+        background-color: var(--background-color);
+        height: 3rem;
+        width: 3rem;
+        border: none;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cardimg{
+        width: 3rem;
+        height: 3rem;
+         border: none;
+        border-radius: 50px;
+    }
+    .featuretitle{
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: aliceblue;
+    }
+    .featuredescription{
+        color: aliceblue;
+    }
+  
